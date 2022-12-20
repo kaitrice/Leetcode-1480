@@ -21,4 +21,18 @@ public final class Solution {
         }
         return nums;
     }
+
+    /**
+     * @param args User input array of integers.
+     */
+    public static void main(String[] args) {
+        Solution s = new Solution();
+        int[] input = new int[args.length];
+        
+        for (int i = 0; i < args.length; i++)
+            input[i] = Integer.parseInt(args[i]);
+            
+        System.out.println("Input: " + Arrays.toString(input));
+        System.out.println("Output: " + Arrays.toString(s.runningSum(input)));
+    }
 }
